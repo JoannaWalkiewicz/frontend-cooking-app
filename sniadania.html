@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Kulinarna - Śniadania</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+    #banner {
+        height: 50px;
+    }
+
+    .banner {
+        min-height: 0.05vh;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Kuchnia Świata<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html#swiat_kuchni" onclick="toggleMenu();">Świat Kuchni</a></li>
+            <li><a href="index.html#przepisy" onclick="toggleMenu();">Przepisy</a></li>
+            <li><a href="index.html#produkty" onclick="toggleMenu();">Produkty</a></li>
+            <li><a href="index.html#porady" onclick="toggleMenu();">Porady</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu();">Kontakt</a></li>
+        </ul>
+    </header>
+    <section class="banner_podstrony">
+    </section>
+    <section class="przepisy" id="przepisy">
+        <div class="title">
+            <h2 class="titleText"><span>Ś</span>niadania</h2>
+
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="column">
+                    <img src="slider/sniadania/img1.jpg" class="imgMiniature" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/sniadania/img2.jpg" class="imgMiniature" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/sniadania/img3.jpg" class="imgMiniature" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/sniadania/img4.jpg" class="imgMiniature" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow">
+                </div>
+
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="slider/sniadania/img1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="slider/sniadania/img2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="slider/sniadania/img3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="slider/sniadania/img4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="slider/sniadania/img1.jpg" onclick="currentSlide(1)" alt="Tost z jajkiem sadzonym">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/sniadania/img2.jpg" onclick="currentSlide(2)" alt="Kanapka Warstowa">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/sniadania/img3.jpg" onclick="currentSlide(3)" alt="Musli OWocowe">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/sniadania/img4.jpg" onclick="currentSlide(4)" alt="Poranna Kawa">
+                    </div>
+                </div>
+            </div>
+
+
+            <p>
+                </br><strong>TOST Z JAJKIEM SADZONYM:</strong></br></br>
+                Na rozgrzanej patelni z dodatkiem oleju, smażymy jajka sadzone. Doprawiamy solą i pieprzem. Po
+                upieczeniu nasze tosty wykładamy na talerz. Następnie na każdym z nich dodajemy sadzone jajko.
+
+                </br></br><strong>KANAPKA WARSTWOWA:</strong><br>
+                </br>
+                Dwie kromki chleba smarujemy masłem, dodajemy ser, warstwę rukoli, marchewkę i szynkę. Składamy obie
+                części. Gotowe!
+
+                </br></br><strong>MUSLI OWOCOWE:</strong><br></br>
+                SKŁADNIKI: 180 g Jogurtu Naturalnego Gęstego Bakoma, ulubione świeże owoce np. maliny, truskawki,
+                jabłko, gruszka, banan, śliwki, winogrono, borówki, kiwi, granat, arbuz, melon,
+                odrobina miodu lub syropu z agawy, 5-6 łyżek domowego musli</br>
+                </br>Wsypać płatki do miseczki. Wlać odrobinę miodu na płatki. Dodać jogurt na płatki. Owoce pokroić w
+                małe paseczki lub w kosteczkę. Posypać owocami jogurt. Na owoce można dodać odrobinę miodu. Zamiast
+                świeżych owoców można dodać suszone. Jeśli ktoś lubi dużo owoców w musli może dodać jedne i drugie. My
+                przeważnie jemy musli z dwoma rodzajami świeżych owoców.
+                </br>
+
+                </br></br><strong>PORANNA KAWA:</strong><br></br>
+                SKŁADNIKI: kawa rozpuszczalna, 2-3 łyżeczki, mleko, 1 szkl, woda, 1 szkl., 2 łyżeczki miodu, 1 czubata
+                łyżeczka przyprawy do piernika.</br>
+                </br>Miód wymieszać z przyprawą do piernika i lekko podgrzać (np. w mikrofalówce). Kawę zalać wrzątkiem, wymieszać. Wlać do niej gorące mleko. Do ulubionego kubka na spód wlać miód z przyprawą i zalać gorąca kawą,
+                wymieszać. Smacznego :-)</br>
+
+            </p>
+        </div>
+
+
+        <div class="title">
+            <a href="#" class="btn">Powrót</a>
+
+        </div>
+
+    </section>
+    <div class="copyrightText">
+        <p>Copyright 2021 Projekt Joanna Walkiewicz</p>
+    </div>
+</body>
+
+</html>

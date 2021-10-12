@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Kulinarna - Dania mięsne</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+    #banner {
+        height: 50px;
+    }
+
+    .banner {
+        min-height: 0.05vh;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Kuchnia Świata<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html#swiat_kuchni" onclick="toggleMenu();">Świat Kuchni</a></li>
+            <li><a href="index.html#przepisy" onclick="toggleMenu();">Przepisy</a></li>
+            <li><a href="index.html#produkty" onclick="toggleMenu();">Produkty</a></li>
+            <li><a href="index.html#porady" onclick="toggleMenu();">Porady</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu();">Kontakt</a></li>
+        </ul>
+    </header>
+    <section class="banner_podstrony">
+    </section>
+    <section class="przepisy" id="przepisy">
+        <div class="title">
+            <h2 class="titleText"><span>D</span>ania mięsne</h2>
+
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="column">
+                    <img src="slider/dania_miesne/img1.jpg" class="imgMiniature" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/dania_miesne/img2.jpg" class="imgMiniature" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/dania_miesne/img3.jpg" class="imgMiniature" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/dania_miesne/img4.jpg" class="imgMiniature" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow">
+                </div>
+
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="slider/dania_miesne/img1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="slider/dania_miesne/img2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="slider/dania_miesne/img3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="slider/dania_miesne/img4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="slider/dania_miesne/img1.jpg" onclick="currentSlide(1)"
+                            alt="Kurczak z rożna">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/dania_miesne/img2.jpg" onclick="currentSlide(2)" alt="Żeberka">
+                        alt="Zupa pieczarkowa">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/dania_miesne/img3.jpg" onclick="currentSlide(3)" alt="Wołowina">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/dania_miesne/img4.jpg" onclick="currentSlide(4)"
+                            alt="Tortilla z kurczakiem">
+                        alt="Zupa Marchewkowa">
+                    </div>
+                </div>
+            </div>
+
+
+            <p>
+                </br><strong>KURCZAK Z ROŻNA:</strong></br>
+                </br>SKŁADNIKI: 1 kurczak zagrodowy (ok. 2 kg), 3 łyżki musztardy miodowej, 1 łyżka miodu, 4 łyżki
+                musztardy francuskiej (ziarnistej)
+                2 łyżki oliwy extra vergine, sól, pieprz, ćwiartka obranej cytryny, ćwiartka obranej cebuli
+                </br>
+                PRZEPIS: Kurczaka wyjąć z lodówki i ocieplić w temp. pokojowej (ok. 1 godzina), opłukać, osuszyć
+                papierowymi ręcznikami. Doprawić solą i pieprzem (również w środku), zużywając w sumie ok. 2 łyżeczki
+                soli morskiej i 1/2 łyżeczki pieprzu. Do środka włożyć cytrynę i cebulę, sznurkiem związać nogi.
+                Kurczaka wysmarować mieszanką musztardy ziarnistej i miodowej, miodu i oliwy extra vergine. Odłożyć na
+                około godzinę. Piekarnik nagrzać do 220 stopni C. Kurczaka położyć w naczyniu żaroodpornym piersiami do
+                góry,
+                wstawić do piekarnika tak aby kurczak znajdował się pośrodku piekarnika czyli na kratce niżej niż połowa
+                piekarnika. Piec przez 1 godzinę i 45 minut, z tym, że pierwsze 30 minut bez przykrycia, a reszta pod
+                luźno położonym kawałkiem folii aluminiowej. Po pierwszych 30 minutach kurczak powinien być już dobrze
+                zrumieniony.Po upieczeniu wyjąć kurczaka, zdjąć folię i zostawić na minimum 15 minut. Dopiero po tym
+                czasie można go
+                pokroić.
+
+                </br></br><strong>ŻEBERKA:</strong> <br>
+                </br>SKŁADNIKI: żeberka wieprzowe 1.5 kilograma, ketchup Hellmann's Extra Hot, 200 mililitrów, rosół z
+                kury Knorr,
+                1 ząbek czosnku, 4 sztuki, czerwone cebule 2 sztuki, imbir z Nigerii Knorr, 20 gramów brązowego cukru,
+                50 gramów miodu,
+                ziarna kolendry, 10 gramów gałki muszkatołowej z Indonezji Knorr, 20 gramów cynamonu z Wietnamu Knorr,
+                20 gramów
+                goździków z Indonezji Knorr, 10 gramów pieprzu cayenne, 10 gramów przyprawy do mięs Knorr</br>
+                </br>
+                PRZEPIS: Umyj żeberka, oczyść i podziel na mniejsze porcje, na przykład po trzy kostki. Zagotuj około 2
+                litry wody z kostką Knorr.
+                Gotuj żeberka w bulionie około 20 minut. Odstaw do ostygnięcia. Pokrój cebule i czosnek w drobną kostkę
+                i podsmaż w dużym garnku. Dodaj cukier i poczekaj do momentu, kiedy lekko się z karmelizuje. Ziarna
+                kolendry rozdrobnij w moździerzu i wrzuć do garnka razem z przyprawą Knorr oraz pozostałymi przyprawami.
+                Następnie dodaj ketchup i duś przez około 15 minut. Pod koniec sos dopraw miodem. Jeśli będzie zbyt
+                gęsty, dodaj trochę bulionu, który pozostał z gotowania żeberek.
+                W tak przygotowanym sosie marynuj żeberka co najmniej jeden dzień.
+                Opiekaj mięso na średnio rozgrzanym grillu około 30 minut lub piecz w rozgrzanym do 160°C piekarniku
+                przez około 1 godzinę. Podawaj z kolbami kukurydzy i pieczonymi ziemniakami.
+
+                </br></br><strong>WOŁOWINA:</strong><br>
+                </br>SKŁADNIKI:wołowina 350 gramów, oliwa do smażenia, czosnek 3 ząbki
+                Pieprz czarny Prymat  do smaku, goździki całe Prymat 8 sztuk,
+                Cynamon cały Prymat, 1 sztuka cebuli czerwonej, sól morska Prymat w młynku do smaku,
+                woda, 700 mililitrów wino półwytrawne czerwone, 150 mililitrów passaty pomidorowej,250 mililitrów
+                świeży makaron, ser gruyerendo posypania oregano świeże do ozdoby</br>
+                </br>
+                PRZEPIS: Wołowinę podsmażamy na oliwie wraz z czosnkiem, pieprzem, goździkami oraz cynamonem, aż będzie ładnie brązowa.
+                Następnie dodajemy cebulę, całość solimy i podsmażamy kolejne 2 minuty. Kiedy cebula się podsmaży całość zalewamy wodą oraz winem i gotujemy do momentu aż wołowina będzie lekko miękka (powinno to trwać ok 45 minut).
+                Po tym czasie dodajemy pomidory i dusimy do momentu aż wołowina zacznie się prawie rozpadać (30 minut - 1 godzinę).
+                Gotowy gulasz podajemy z świeżym posolonym makaronem, serem oraz świeżym oregano. Smacznego!
+                
+                
+
+                </br></br><strong>TORTILLA Z KURCZAKIEM:</strong><br>
+                </br>SKŁADNIKI: 300 g filetu z kurczaka, 2 łyżki oliwy, 1 cebula, 1 papryka,
+                mała puszka (200 g) kukurydzy, 300 g tartej mozzarelli (twardszej i żółtej, nie białej z zalewy),
+                2 łyżeczki masła, 4 duże tortille (śr. 25 cm), 2 ząbki czosnku, starte, 1/2 łyżeczki ostrej papryki, 1 łyżeczka słodkiej papryki, 1 łyżeczka kuminu,
+                1/2 łyżeczki suszonego oregano,1 łyżeczka płatków chili.</br>
+                </br>
+                PRZEPIS: Kurczaka pokroić na wąskie paski dł. ok. 2 cm. Doprawić solą, pieprzem oraz wszystkimi przyprawami. Polać łyżką oleju roślinnego i dokładnie wymieszać, odstawić.
+                Cebulę pokroić w piórka, paprykę - podobnie jak kurczaka - na wąskie paski dł. ok. 2 cm. Doprawić solą i zeszklić na patelni na łyżce oleju, odłożyć na talerz.
+                Na rozgrzaną patelnię włożyć kurczaka i obsmażyć przez ok. 4 minuty. Przełożyć na oddzielny talerz.
+                Na dużej patelni rozgrzać i rozprowadzić łyżeczkę masła. Położyć placek tortilli i wyłożyć na niego połowę wszystkich składników farszu - kurczaka (bez soków z mięsa), podsmażone warzywa, kukurydzę i tarty ser. Przykryć drugim plackiem tortilli i podsmażać na małym ogniu ok. 2 minuty, aż tortilla na spodzie się zrumieni.
+                Podgrzaną z jednej strony quesadillę przełożyć na drugą stronę* i ponownie podsmażyć na maśle do zrumienienia. Powtórzyć z pozostałymi dwoma plackami tortilli i drugą połową farszu.
+                Podgrzane quesadille kroić nożem na kawałki jak pizzę, podawać z wybranymi dodatkami.
+                
+                
+
+        </div>
+
+
+        <div class="title">
+            <a href="#" class="btn">Powrót</a>
+
+        </div>
+
+    </section>
+    <div class="copyrightText">
+        <p>Copyright 2021 Projekt Joanna Wakiewicz</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Kulinarna - Desery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+    #banner {
+        height: 50px;
+    }
+
+    .banner {
+        min-height: 0.05vh;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Kuchnia Świata<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html#swiat_kuchni" onclick="toggleMenu();">Świat Kuchni</a></li>
+            <li><a href="index.html#przepisy" onclick="toggleMenu();">Przepisy</a></li>
+            <li><a href="index.html#produkty" onclick="toggleMenu();">Produkty</a></li>
+            <li><a href="index.html#porady" onclick="toggleMenu();">Porady</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu();">Kontakt</a></li>
+        </ul>
+    </header>
+    <section class="banner_podstrony">
+    </section>
+    <section class="przepisy" id="przepisy">
+        <div class="title">
+            <h2 class="titleText"><span>D</span>esery</h2>
+
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="column">
+                    <img src="slider/desery/img1.jpg" class="imgMiniature" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/desery/img2.jpg" class="imgMiniature" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/desery/img3.jpg" class="imgMiniature" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/desery/img4.jpg" class="imgMiniature" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow">
+                </div>
+
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="slider/desery/img1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="slider/desery/img2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="slider/desery/img3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="slider/desery/img4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="slider/desery/img1.jpg" onclick="currentSlide(1)" alt="Sernik domowy">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/desery/img2.jpg" onclick="currentSlide(2)"
+                            alt="Ciasteczka Świąteczne">
+                        alt="Zupa pieczarkowa">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/desery/img3.jpg" onclick="currentSlide(3)" alt="Tort">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/desery/img4.jpg" onclick="currentSlide(4)" alt="Muffinki">
+                        alt="Zupa Marchewkowa">
+                    </div>
+                </div>
+            </div>
+
+
+            <p>
+                </br><strong>SERNIK DOMOWY:</strong></br>
+                </br>SKŁADNIKI: 250 g miękkiej margaryny, 6 żółtek, 1 kg sera białego półtłustego trzykrotnie mielonego,
+                1,5 szklanki cukru, 1/2 szklanki kwaśnej śmietany 18%, 2 budynie śmietankowe bez cukru, 1 łyżeczka
+                proszku do pieczenia, piana ubita z 6 białek, 125 g miękkiej margaryny, 1/2 szklanki cukru,
+                1 szklanka mąki, 1/2 łyżeczki proszku do pieczenia,2 jaja.
+                </br></br>
+                PRZEPIS: Margarynę ucieramy mikserem na gładką masę. Dodajemy jajka oraz cukier, a na koniec przesianą
+                mąkę z proszkiem do pieczenia. Ciasto rozsmarowujemy równomiernie na wysmarowanej i wyłożonej papierem
+                do
+                pieczenia lub pergaminem blaszce o wymiarach producenta 360x245x60 mm. Blachę należy obłożyć dodatkowo
+                wyżej około 2 cm ponad brzeg papierem, aby podczas pieczenia masa serowa nie wypłynęła (ponieważ sporo
+                urośnie) Margarynę, żółtka i cukier ucieramy mikserem na gładką masę. Dodajemy porcjami ser i śmietanę.
+                Cały czasucierając dodajemy proszek budyniowy i proszek do pieczenia. Na koniec dodajemy ubitą pianę z 6
+                jaj
+                i delikatnie mieszamy. Powstanie gładka jak puch masa serowa. Tak przygotowaną masę wylewamy na surowe
+                ciasto i wstawiamy
+                do piekarnika, nagrzanego do temperatury 180 stopni. Pieczemy około 70 minut do zrumienienia. Po wyjęciu
+                z pieca, sernik pozostawiamy
+                do całkowitego wystygnięcia. Sernik gotowy!
+
+                </br></br><strong>CIASTECZKA ŚWIĄTECZNE:</strong> <br>
+                </br>SKŁADNIKI: 1/4 szklanki miodu, 80 g masła, 1/2 szklanki miałkiego brązowego cukru lub cukru pudru,1
+                jajko,
+                2 i 1/4 szklanki mąki pszennej, 1 łyżeczka sody oczyszczonej, 1,5 – 2 łyżki przyprawy korzennej do
+                piernika
+                opcjonalnie: 1 łyżeczka kakao </br>
+                </br>
+                PRZEPIS: Miód, masło i cukier podgrzać w garnuszku i wymieszać, do rozpuszczenia się cukru, przestudzić.
+                Dodać pozostałe składniki i wyrobić lub zmiksować. Jeśli ciasto będzie zbyt sypkie dodać więcej płynnego
+                miodu do osiągnięcia odpowiedniej konsystencji i zmiksować. Jeśli ciasto będzie zbyt miękkie, schłodzić
+                (będzie się lepiej wałkowało). Wałkować na stolnicy na grubość 2 – 3 mm lekko podsypując mąką (grubsze pierniczki są
+                bardziej miękkie po upieczeniu). Wykrawać pierniczki o dowolnych kształtach i przekładać na blachę wyłożoną papierem do
+                pieczenia. Układać na blaszce wyłożonej papierem do pieczenia i piec około 8 – 10 minut w temperaturze 170 – 180ºC.
+                Uważać, by nie piec za długo, będą zbyt kruche i będą miały posmak goryczy. Wyjąć z piekarnika,
+                wystudzić na kratce.
+
+                </br></br><strong>TORT:</strong><br>
+                </br>SKŁADNIKI: 5 jaj, 1 szklanka mąki, 1 szklanka cukru, 2 łyżki mąki ziemniaczanej, 1 łyżeczka proszku do pieczenia, 2 budynie śmietankowe lub cytrynowe,
+                700 ml mleka, 400 g masła, 1 i 1/2 szklanki cukru, sok z 1/2 cytryny, 1/2 łyżeczki aromatu cytrynowego, 1 łyżka spirytusu, ok. 1 szklanki przegotowanej wody
+                sok z 1/2 cytryny, 1 łyżka spirytusu, ok. 200 g gotowych bezików</br>
+                </br>
+                PRZEPIS: Jajka dokładnie ubić z cukrem na białą i puszystą masę (najlepiej ubijać na parze, potem gdy masa już się podgrzeje i cukier rozpuści, zdjąć miskę z pary i dalej ubijać).
+                Dodać przesianą mąkę pszenną, mąkę ziemniaczaną oraz proszek do pieczenia. Delikatnie ale dokładnie połączyć mieszając szpatułką lub krótko miksując na minimalnych obrotach miksera.
+                Przełożyć do tortownicy o średnicy 24 - 25 cm posmarowanej tłuszczem i posypanej bułką tartą i piec przez ok. 30 minut w 180 stopniach C. Ugotować dwa budynie w 700 ml mleka, ostudzić. Miękkie masło utrzeć z cukrem na puszysty i biały krem. Następnie stopniowo dodawać ostudzony budyń.
+                Gdy masa będzie puszysta małymi porcjami dodać sok z 1/2 cytryny, aromat cytrynowy oraz spirytus. Biszkopt przekroić, nasączyć przegotowaną wodą z sokiem z cytryny i spirytusem. Dolny blat posmarować 1/3 ilości kremu cytrynowego, poukładać bezy, przykryć 1/3 kremu oraz drugą częścią biszkoptu.
+                Posmarować ostatnią 1/3 ilości kremu i ozdobić bezami. Posmarować ostatnią 1/3 ilości kremu i ozdobić bezami. Wstawić do lodówki na minimum 1 i 1/2 godziny.
+                </br></br><strong>MUFFINKI:</strong><br>
+                </br>SKŁADNIKI: 150 g masła, 150 g czekolady (dowolnej, deserowej, mlecznej, białej lub gorzkiej), 300 g mąki,
+                2 łyżeczki proszku do pieczenia, 1/2 łyżeczki sody oczyszczonej, 2 łyżki kakao, 1 łyżka kawy zbożowej lub kakao, 1 szklanka (190 g) cukru
+                1 łyżka cukru wanilinowego lub 2 łyżeczki ekstraktu z wanilii, 2 duże jajka (L), 170 ml mleka, 12 - 18 papilotek, forma lub 2 formy na muffiny</br></br>
+                PRZEPIS: JPiekarnik nagrzać do 180 stopni C. Masło roztopić i ostudzić. Czekoladę pokroić na kawałeczki.
+                Mąkę przesiać do miski razem z proszkiem do pieczenia, sodą, kakao, kawą zbożową. Jeszcze raz przesiać w celu dokładnego wymieszania składników. Dodać cukier, cukier wanilinowy, wymieszać, odstawić.
+                Jajka rozmiksować w drugiej misce razem z mlekiem i ekstraktem z wanilii (jeśli nie używaliśmy cukru wanilinowego).
+                Teraz wszystkie składniki delikatnie łączymy za pomocą łyżki: do sypkich, przesianych składników dodajemy masę jajeczną i kilkakrotnie delikatnie mieszamy łyżką, dodajemy roztopione masło a za chwilę posiekaną czekoladę. Mieszamy krótko (3 - 4 ruchy łyżką), ciasto ma być lekko grudkowate, ale surowa mąka nie powinna być widoczna.
+                Masę wyłożyć do papilotek umieszczonych w formie na muffiny i wstawić do piekarnika. Piec przez około 25 minut, do czasu aż muffiny urosną, na wierzchu utworzy się skorupka a wetknięty patyczek będzie suchy.
+            </br>
+            </p>
+        </div>
+
+
+        <div class="title">
+            <a href="#" class="btn">Powrót</a>
+
+        </div>
+
+    </section>
+    <div class="copyrightText">
+        <p>Copyright 2021 Projekt Joanna Walkiewicz</p>
+    </div>
+</body>
+
+</html>

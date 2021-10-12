@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Kulinarna - Przekaski</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="js/slider.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<style>
+    #banner {
+        height: 50px;
+    }
+
+    .banner {
+        min-height: 0.05vh;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Kuchnia Świata<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html#swiat_kuchni" onclick="toggleMenu();">Świat Kuchni</a></li>
+            <li><a href="index.html#przepisy" onclick="toggleMenu();">Przepisy</a></li>
+            <li><a href="index.html#produkty" onclick="toggleMenu();">Produkty</a></li>
+            <li><a href="index.html#porady" onclick="toggleMenu();">Porady</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu();">Kontakt</a></li>
+        </ul>
+    </header>
+    <section class="banner_podstrony">
+    </section>
+    <section class="przepisy" id="przepisy">
+        <div class="title">
+            <h2 class="titleText"><span>P</span>rzekąski</h2>
+
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="column">
+                    <img src="slider/przekaski/img1.jpg" class="imgMiniature" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/przekaski/img2.jpg" class="imgMiniature" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/przekaski/img3.jpg" class="imgMiniature" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="slider/przekaski/img4.jpg" class="imgMiniature" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow">
+                </div>
+
+            </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="slider/przekaski/img1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="slider/przekaski/img2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="slider/przekaski/img3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="slider/przekaski/img4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="slider/przekaski/img1.jpg" onclick="currentSlide(1)" alt="Owoce">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/przekaski/img2.jpg" onclick="currentSlide(2)" alt="Orzechy">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/przekaski/img3.jpg" onclick="currentSlide(3)" alt="Czekolada">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="slider/przekaski/img4.jpg" onclick="currentSlide(4)" alt="Sery">
+                    </div>
+                </div>
+            </div>
+
+
+            <p>
+                </br><strong>OWOCE:</strong></br></br>
+                Szczególnie cenne są owoce jagodowe ze względu na zawartość związków biologicznie czynnych z grupy
+                polifenoli, mających odzwierciedlenie w kolorach owoców. Np.w truskawach są to pelargonidy, a ksóa
+                czarnej porzeckzi zawiera duże ilości delfinidy i cyjanidy. Bogactwo polifenoli w połączeniu z
+                witaminami buduje potencjał antyoksydacyjny. To sprawia, że owoce jagodowe chronią przed niekorystnym
+                wpływem czynników środowiskowych i żywieniowych, szczególnie tych obecnych w produktach wysoko
+                przetworzonych. Opóźnia procesy starzenia się organizmu i wspomaga regenerację jego struktur oraz
+                profilaktykę wielu schorzeń.
+                
+                </br></br><strong>ORZECHY:</strong><br>
+                </br>
+                Orzechy to wyjątkowe bakalie. Nie tylko są bardzo smaczne, lecz także dostarczają nam cennych
+                skłądników: nienasyconych kwasów tłuszczowych, magnezu, fosforu, wapnia, potasu, cynku i wielu innych.
+                Najzdrowsze wśród orzechów są włoskie. Warto jeść orzechy, bo wspomagają nasz układ krążenia i układ
+                nerwowy, mają korzystny wpływ na pracę mózgu, są ważne w profilaktyce cukrzycy, zawału czy udaru mózgu.
+                Zachowajmy jednak umiar: spożywajmy ich nie więcej, niż 30g dziennie. W kuchni okazują się niezastąpione
+                i uniwersalne: pasują do musli, koktajli, deserów, ciast, a także dań wytrawnych, np. kuchni
+                azjatyckiej. Mozna z nich też robić "mleko" i masło roślinne.
+                </br></br><strong>CZEKOLADA:</strong><br>
+                </br>Jedną z najcenniejszych substancji zawartych w czekoladzie są flawonoidy. To silne
+                przeciwutleniacze, które zwalczają wolne rodniki, spowalniając procesy starzenia, likwidując stany
+                zapalne i zapobiegając chorobom serca i nowotworom. Ponadto obniżają poziom tzw. złego cholesterolu
+                (którego zbyt wysoka ilość prowadzi m.in. do miażdżycy) oraz regulują skurcze serca. Wpływ na prawidłową
+                pracę układu krążenia mają też polifenole, które rozkurczają naczynia krwionośne, ułatwiając przepływ
+                krwi i zapobiegając zatorom czy zakrzepom. Związki te regulują też ciśnienie. W ten sposób zmniejszają
+                ryzyko wystąpienia m.in. zawału serca czy udaru mózgu. Czekolada jest bardzo dobrym źródłem magnezu,
+                którego bardzo potrzebuje układ nerwowy oraz wszystkie mięśnie, także serce. Magnez chroni mięsień
+                sercowy, zapobiegając niedotlenieniu i niedokrwieniu. Ma również działanie przeciwzapalne,
+                przeciwzakrzepowe i przeciwskurczowe</br>
+
+
+                </br></br><strong>SERY:</strong><br>
+                </br>Ser to szczęście! Nie bez powodu hormonem szczęścia jest właśnie (ser)otonina. Ale sery to również
+                niezapomniane doznania smakowe, które czekają na odkrycie w każdym nowym produkcie.</br>
+
+            </p>
+        </div>
+
+
+        <div class="title">
+            <a href="#" class="btn">Powrót</a>
+
+        </div>
+
+    </section>
+    <div class="copyrightText">
+        <p>Copyright 2021 Projekt Joanna Walkiewicz</p>
+    </div>
+</body>
+
+</html>
